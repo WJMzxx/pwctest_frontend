@@ -68,7 +68,7 @@ class Update extends Component {
 
     getTitle() {
         return (
-            <h3 className="text-center">update</h3>
+            <h3 className="text-center">Update</h3>
         )
 
     }
