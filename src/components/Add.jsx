@@ -60,7 +60,7 @@ class Add extends Component {
 
     getTitle() {
         return (
-            <h3 className="text-center">add</h3>
+            <h3 className="text-center">Add</h3>
         )
 
     }
