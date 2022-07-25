@@ -37,9 +37,9 @@ class Get extends Component {
     render() {
         return (
             <div>
-                <h2 className="text-center">us List</h2>
+                <h2 className="text-center">User List</h2>
                 <div className="row">
-                    <button className="btn btn-primary" onClick={this.add}> Add u</button>
+                    <button className="btn btn-primary" onClick={this.add}> Add User</button>
                 </div>
                 <br></br>
                 <div className="row">
