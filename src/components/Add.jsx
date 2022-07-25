@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import UT from './UT';
+import UserUtil from './UserUtil';
 
 class Add extends Component {
     constructor(props) {
@@ -36,7 +36,7 @@ class Add extends Component {
         }
         console.log('u => ' + JSON.stringify(u));
 
-        UT.createU(u).then(res => {
+        UserUtil.createU(u).then(res => {
             this.props.history.push('/us');
         });
 

@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const URL = "http://localhost:8081/u";
 
-class UT {
+class UserUtil {
 
     getU(){
         return axios.get(URL);
@@ -29,4 +29,4 @@ class UT {
     }
 }
 
-export default new UT()
+export default new UserUtil()

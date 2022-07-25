@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import UT from './UT';
+import UserUtil from './UserUtil';
 
 class Get extends Component {
     constructor(props) {
@@ -15,7 +15,7 @@ class Get extends Component {
     }
 
     componentDidMount() {
-        UT.getAll().then((res) => {
+        UserUtil.getAll().then((res) => {
             this.setState({ us: res.data });
             console.log(this.state.us);
         });
@@ -25,7 +25,7 @@ class Get extends Component {
     }
 
     del(id) {
-        UT.deleteU(id).then(res => {
+        UserUtil.deleteU(id).then(res => {
             this.setState({ us: this.state.us.filter(u => u.id !== id) });
         });
     }

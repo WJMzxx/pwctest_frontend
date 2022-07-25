@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import UT from './UT';
+import UserUtil from './UserUtil';
 
 class Update extends Component {
     constructor(props) {
@@ -21,7 +21,7 @@ class Update extends Component {
     }
 
     componentDidMount() {
-        UT.getUById(this.state.id).then(res => {
+        UserUtil.getUById(this.state.id).then(res => {
             this.setState({
                 name: res.data.name,
                 pwd: res.data.pwd,
@@ -44,7 +44,7 @@ class Update extends Component {
         }
         console.log('u => ' + JSON.stringify(u));
 
-        UT.createU(u).then(res => {
+        UserUtil.createU(u).then(res => {
             this.props.history.push('/us');
         });
 
